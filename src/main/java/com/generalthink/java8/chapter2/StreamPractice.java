@@ -44,7 +44,7 @@ public class StreamPractice {
      */
     public int getTotalMembers(List<Artist> artists) {
         //Long::sum表示调用Long.sum的静态方法
-        return artists.stream().map(artist -> artist.getMembers().stream().count()).reduce(0L, Long::sum).intValue();
+        return artists.stream().map(artist -> artist.getMembers().count()).reduce(0L, Long::sum).intValue();
         //return artists.stream().flatMapToInt(artist -> IntStream.of(artist.getMembers().size())).sum();
     }
     

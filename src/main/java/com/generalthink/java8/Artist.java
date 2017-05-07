@@ -1,13 +1,13 @@
 package com.generalthink.java8;
 
-import java.util.List;
+import java.util.stream.Stream;
 
 //创作音乐的个人或团队
 public class Artist {
 
     private String name;//艺术家名字
     
-    private List<String> members;//乐队成员
+    private Stream<String> members;//乐队成员
     
     private String origin;//来自哪里
 
@@ -19,11 +19,11 @@ public class Artist {
         this.name = name;
     }
 
-    public List<String> getMembers() {
+    public Stream<String> getMembers() {
         return members;
     }
 
-    public void setMembers(List<String> members) {
+    public void setMembers(Stream<String> members) {
         this.members = members;
     }
 

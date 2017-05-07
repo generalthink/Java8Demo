@@ -60,13 +60,13 @@ public class StreamPracticeTest {
         members.add("zhangsan");
         members.add("zhangsan2");
         members.add("zhangsan3");
-        a1.setMembers(members);
+        a1.setMembers(members.stream());
         
         Artist a2 = new Artist();
         List<String> members2 = new ArrayList<String>();
         members2.add("lisi");
         members2.add("lisi2");
-        a2.setMembers(members2);
+        a2.setMembers(members2.stream());
         
         List<Artist> artists = new ArrayList<Artist>();
         artists.add(a2);
