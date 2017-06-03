@@ -10,6 +10,8 @@ public class Album {
     private List<Track> tracks;//专辑上所有曲目列表
     
     private List<Artist> musicians;//参与创作本专辑的艺术家列表
+    
+    private Artist mainMusician;//主唱
 
     public String getName() {
         return name;
@@ -34,4 +36,13 @@ public class Album {
     public void setMusicians(List<Artist> musicians) {
         this.musicians = musicians;
     }
+
+    public Artist getMainMusician() {
+        return mainMusician;
+    }
+
+    public void setMainMusician(Artist mainMusician) {
+        this.mainMusician = mainMusician;
+    }
+    
 }

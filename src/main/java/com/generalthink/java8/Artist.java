@@ -10,6 +10,9 @@ public class Artist {
     private Stream<String> members;//乐队成员
     
     private String origin;//来自哪里
+    
+    @SuppressWarnings("unused")
+    private Boolean isSolo;
 
     public String getName() {
         return name;
@@ -33,6 +36,15 @@ public class Artist {
 
     public void setOrigin(String origin) {
         this.origin = origin;
+    }
+
+    public Boolean isSolo() {
+        if(null != members) {
+            if(members.count() > 1) {
+                return false;
+            }
+        }
+        return true;
     }
     
 }
